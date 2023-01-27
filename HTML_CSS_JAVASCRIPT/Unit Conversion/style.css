@@ -1,0 +1,35 @@
+head{
+    font-size: 30px;
+    color: rgb(209, 65, 209);
+    float:left;
+    padding-left: 2cm;
+}
+body{
+    background-color:silver;
+}
+fieldset{
+    font-size: 30px;
+    font-weight: bold;
+    border-width: 100;
+    border-color: black;
+    color:rgb(226, 100, 226);
+
+    padding-left: 2cm;
+}
+
+#home{
+    margin-top:-1px;
+    margin-left: -1px;
+    margin-right :-1px;
+    padding-bottom:2cm;
+    background-color: rgb(114, 114, 223);
+   
+}
+
+header{
+    font-size: 30px;
+    color: rgb(209, 94, 209);
+    float: left;
+    padding-left: 2cm;
+}
+
