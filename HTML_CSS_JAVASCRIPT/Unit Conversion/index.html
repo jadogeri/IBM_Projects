@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Adogeri Unit Conversion (US/ENGLAND)</title>
+</head>
+<body>
+    <section id="home">
+        <!-- This is the main heading -->
+        <header><b><h1>Joseph Adogeri Unit Conversion (US/ENGLAND)</h1></b></header>
+        <nav>
+            <!-- Button for redirecting users to the weight section -->
+            <a href="#weight"><button>WEIGHT</button></a>
+               <!-- Button for redirecting users to the distance section -->
+            <a href="#distance"><button>DISTANCE</button></a>
+                  <!-- Button for redirecting users to the speed section -->
+            <a href="#temperature"><button>TEMPERATURE</button></a>
+           
+
+        </nav>
+
+    </section>
+    <div id = 'all-conversion-sections'>
+        <section id="weight">
+             <!-- Weight conversion section -->
+             <div id="wgt">
+                <figure>
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px"/>
+
+                    <figcaption><b>Pound to Kilogram Conversion</figcaption></b></figcaption>
+                </figure>
+                <article>
+                    <!-- This contains the specific elements for WEIGHT conversion -->
+                    <fieldset>
+                        <legend>WEIGHT</legend>
+                        <!-- Label for Weight input -->
+                        <label for="weight">Pound</label> <br/>
+                        <input type="number" id="p"> <br/>
+                        <!-- The conversion button -->
+                        <button id="weight"> Convert </button> <br/>
+                        <!-- Label for weight output -->
+                        <input type="number" id="K"> <br/>
+                        <label for="weight">Kilogram</label>
+                      </fieldset>
+                  </article>
+                  <aside>
+                    To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+                </aside>
+             </div>
+        </section>
+        <section id="distance">
+            <div id="dst">
+                <figure>
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px"/>
+                    <figcaption><b>Kilometer to Mile Conversion</b></figcaption>
+                </figure>
+                <article>
+                    <fieldset>
+                        <legend>DISTANCE</legend>
+                        <label for="distance">Kilometer</label><br>
+                        <input type="number" id="km">                       <br>
+                        <button id="weight">Convert</button><br>
+                        <input type="number" id="ml"></label><br>
+                        <label for="distance">Miles</label>
+                    </fieldset>
+                </article>
+
+            </div>
+
+        </section>
+        <section id="temperature">
+            <div id="dst">
+                <figure>
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200"/>
+                    <figcaption><b>Celcius to Fahrenheit Conversion</b></figcaption>
+                </figure>
+                <article>
+                    <fieldset>
+                        <legend>TEMPERATURE</legend>
+                        <label for="temperature">Celcius</label><br>
+                        <input type="number" id="km">                       <br>
+                        <button id="weight">Convert</button><br>
+                        <input type="number" id="ml"></label><br>
+                        <label for="distance">Miles</label>
+                    </fieldset>
+                </article>
+
+            </div>
+
+        </section>
+
+       
+
+    </div>
+    <nav>  <a href="#home" >BACK TO TOP</a> </b></nav>
+
+</body>
+</html>
