@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Joseph Adogeri - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Joseph Adogeri
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          joekadama@hotmail.com
+        </div>
+        <div style="clear:both;" ></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +5045414308
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->  
+          <a class="topmenu" href="#projects">Projects</a>
+          <!-- Add the links for Skills, Projects and Recommendation here --> 
+           <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container" >
+      <div>
+        <img src="html_finalprojimages/eagles.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Joseph Adogeri! <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with less than 2 years of experience in both application and presentation layers.
+            I have worked on applications and microservices deployed . 
+            I am an eagles supporter
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+          <p>3 years experience</p>
+        </div>  
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Resource Management Tool</h3>
+            <ul>
+              <li>Developed and deployed a resource management app using Java.</li>
+              <li>Allocated resources to various department team by percentage</li>
+
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Hospital Database</h3>
+            <ul>
+              <li>Designed a hospital database to execute real li</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>GameStore App</h3>
+            <ul>
+              <li>Created a hybrid mobile application using JavaScript,React-Native</li>
+              <li>Recommmeded games, search for different genres,added game to favorites</li>
+
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Joseph is a very hard owrking associate. He is knowledgable and eager to learn and strive for 
+          the good for the team. He is always to take on challenges which require him to use the skills he has attained
+          over the few years.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I am writing to recommend Joseph Adogeri. He worked with me at IBM. As a promising junior Full Stack Cloud Software Engineer.
+
+          As an employee, Joseph was always reliable,dependable and resourceful. During his time in my team, he managed to build a strong communication skills.
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          am writing this letter to recommend Joseph Adogeri for the position of software engineer at IBM. Joseph
+           was a reliable software engineer at my computing business for 2 years, and his skills and knowledge 
+           were unparalleled.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
